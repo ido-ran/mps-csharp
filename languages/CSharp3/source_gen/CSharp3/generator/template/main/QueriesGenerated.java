@@ -22,15 +22,15 @@ public class QueriesGenerated {
     return SLinkOperations.getTargets(_context.getNode(), "externAliasDirectives", true);
   }
 
-  public static Iterable sourceNodesQuery_5628778169813233093(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(_context.getNode(), "externAliasDirectives", true);
+  public static Iterable sourceNodesQuery_7308666934815672295(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "usingDirectives", true);
   }
 
-  public static Iterable sourceNodesQuery_5628778169813235225(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable sourceNodesQuery_7308666934815672302(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "namespaceDeclarations", true);
   }
 
-  public static Iterable sourceNodesQuery_5628778169813235237(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable sourceNodesQuery_7308666934815672309(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "typeDeclarations", true);
   }
 

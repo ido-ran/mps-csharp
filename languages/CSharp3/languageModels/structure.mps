@@ -388,10 +388,6 @@
       <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" id="7726055938168326097">
-    <property name="name" value="everythingButEquals" />
-    <property name="constraint" value="[^=]*" />
-  </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7179223641486548891">
     <property name="package" value="types" />
     <property name="name" value="UInt32Type" />
