@@ -58,15 +58,15 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="847558595368972963">
     <property name="name" value="UsingDirective" />
     <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="9003726541838302710">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="namespace" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="847558595370835437" resolveInfo="NamespaceNode" />
+    </node>
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="7474894863272066551">
       <property name="name" value="namespaceAlias" />
       <link role="dataType" targetNodeId="847558595370832099" resolveInfo="Identifier" />
-    </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7474894863272225229">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="namespaceNode" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="847558595370835437" resolveInfo="Namespace" />
     </node>
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="9085176528114372192">
       <property name="value" value="using" />
@@ -92,9 +92,9 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="847558595370835437">
     <property name="name" value="NamespaceNode" />
     <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="7726055938168326096">
-      <property name="name" value="name" />
-      <link role="dataType" targetNodeId="7726055938168326097" resolveInfo="aString" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="9003726541839004032">
+      <property name="name" value="identifier" />
+      <link role="dataType" targetNodeId="847558595370832099" resolveInfo="Identifier" />
     </node>
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="6532057541540870899">
       <property name="name" value="isRootNamespace" />
@@ -104,11 +104,7 @@
       <property name="value" value="namespace" />
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473914776" resolveInfo="shortDescription" />
     </node>
-  </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7474894863272066547">
-    <property name="name" value="NamespaceAlias" />
-    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="7474894863272066549">
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="9003726541838606922">
       <link role="intfc" targetNodeId="2v.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </node>

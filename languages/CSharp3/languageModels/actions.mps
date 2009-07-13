@@ -33,6 +33,7 @@
   <import index="1" modelUID="r:bbd9d46d-5f56-4aff-95b3-b72fe0b49291(CSharp3.structure)" version="-1" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
+  <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActions" id="4331618290746359767">
     <property name="name" value="usingNamespaceAlias" />
     <node role="actionsBuilder" type="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" id="4331618290746359769">
@@ -64,8 +65,8 @@
                       <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8418246158531755276">
                         <link role="variableDeclaration" targetNodeId="8418246158531755262" resolveInfo="parent" />
                       </node>
-                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8418246158531755281">
-                        <link role="link" targetNodeId="1.7474894863272225229" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9003726541838465489">
+                        <link role="link" targetNodeId="1.9003726541838302710" />
                       </node>
                     </node>
                     <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8418246158531755285" />
@@ -130,12 +131,12 @@
                       <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8418246158531755321">
                         <link role="variableDeclaration" targetNodeId="8418246158531755313" resolveInfo="parent" />
                       </node>
-                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6532057541540034543">
-                        <link role="link" targetNodeId="1.7474894863272225229" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9003726541838465490">
+                        <link role="link" targetNodeId="1.9003726541838302710" />
                       </node>
                     </node>
                     <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="7726055938168439912">
-                      <link role="property" targetNodeId="1.7726055938168326096" resolveInfo="name" />
+                      <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
                     </node>
                   </node>
                   <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="4331618290746359794">
@@ -155,12 +156,12 @@
                       <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8418246158531755320">
                         <link role="variableDeclaration" targetNodeId="8418246158531755313" resolveInfo="parent" />
                       </node>
-                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6532057541540034549">
-                        <link role="link" targetNodeId="1.7474894863272225229" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9003726541838465491">
+                        <link role="link" targetNodeId="1.9003726541838302710" />
                       </node>
                     </node>
                     <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="7726055938168439911">
-                      <link role="property" targetNodeId="1.7726055938168326096" resolveInfo="name" />
+                      <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
                     </node>
                   </node>
                   <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="4305279917255017161" />
@@ -183,7 +184,6 @@
       </node>
     </node>
   </node>
-  <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActions" id="5825802137697489172">
     <property name="name" value="enumStorage" />
     <node role="actionsBuilder" type="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" id="5825802137697489173">

@@ -4,6 +4,7 @@
   <refactoringHistory />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
+  <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" />
@@ -58,6 +59,24 @@
                 </node>
               </node>
               <node role="rValue" type="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" id="664760238039008122" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="9003726541838606923">
+    <link role="concept" targetNodeId="1.847558595370835437" resolveInfo="NamespaceNode" />
+    <node role="property" type="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" id="9003726541838606924">
+      <link role="applicableProperty" targetNodeId="2v.1169194664001" resolveInfo="name" />
+      <node role="propertyGetter" type="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" id="9003726541838606925">
+        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="9003726541838606926">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="9003726541839005412">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9003726541839005415">
+              <node role="operand" type="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" id="9003726541839005414" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="9003726541839005419">
+                <link role="property" targetNodeId="1.9003726541839004032" resolveInfo="identifier" />
+              </node>
             </node>
           </node>
         </node>

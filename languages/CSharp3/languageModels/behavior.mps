@@ -363,5 +363,11 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="664760238039145249" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="9003726541838212893">
+    <link role="concept" targetNodeId="1.847558595370835437" resolveInfo="NamespaceNode" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="9003726541838212894">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="9003726541838212895" />
+    </node>
+  </node>
 </model>
 
