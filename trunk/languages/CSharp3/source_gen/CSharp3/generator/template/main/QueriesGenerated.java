@@ -7,6 +7,8 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.generator.template.IfMacroContext;
+import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 public class QueriesGenerated {
@@ -31,8 +33,24 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "namespace", true), "name");
   }
 
+  public static Object propertyMacro_GetPropertyValue_9003726541839277973(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "identifier");
+  }
+
   public static boolean ifMacro_Condition_9003726541838302645(final IOperationContext operationContext, final IfMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), "namespaceAlias") != null;
+  }
+
+  public static boolean ifMacro_Condition_9003726541839277938(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SPropertyOperations.getBoolean(_context.getNode(), "hidesInheritedMember");
+  }
+
+  public static SNode sourceNodeQuery_9003726541839277966(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "visibility", true);
+  }
+
+  public static SNode sourceNodeQuery_9003726541839278006(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "storageType", true);
   }
 
   public static Iterable sourceNodesQuery_2051641451133493531(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
@@ -65,6 +83,14 @@ public class QueriesGenerated {
 
   public static Iterable sourceNodesQuery_9003726541839175791(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "typeDeclarations", true);
+  }
+
+  public static Iterable sourceNodesQuery_9003726541839277911(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "attributes", true);
+  }
+
+  public static Iterable sourceNodesQuery_9003726541839278070(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "members", true);
   }
 
 }
