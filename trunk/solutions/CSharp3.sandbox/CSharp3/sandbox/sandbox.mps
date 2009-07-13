@@ -15,6 +15,19 @@
       <property name="identifier" value="schmoe" />
     </node>
     <node role="namespaceDeclarations" type="CSharp3.structure.NamespaceDeclaration" id="9003726541838479428">
+      <node role="namespaceDeclarations" type="CSharp3.structure.NamespaceDeclaration" id="9003726541839275655">
+        <node role="namespace" type="CSharp3.structure.NamespaceNode" id="9003726541839275656">
+          <property name="identifier" value="Foo" />
+        </node>
+        <node role="namespaceDeclarations" type="CSharp3.structure.NamespaceDeclaration" id="9003726541839275658">
+          <node role="namespace" type="CSharp3.structure.NamespaceNode" id="9003726541839275659">
+            <property name="identifier" value="Baz" />
+          </node>
+          <node role="externAliasDirectives" type="CSharp3.structure.ExternAliasDirective" id="9003726541839275660">
+            <property name="identifier" value="abc" />
+          </node>
+        </node>
+      </node>
       <node role="typeDeclarations" type="CSharp3.structure.EnumDeclaration" id="9003726541839173403">
         <property name="name" value="abc" />
         <node role="visibility" type="CSharp3.structure.PublicTypeVisibility" id="9003726541839173407" />
@@ -35,13 +48,12 @@
       <node role="externAliasDirectives" type="CSharp3.structure.ExternAliasDirective" id="9003726541839004026">
         <property name="identifier" value="bar" />
       </node>
-      <node role="namespace" type="CSharp3.structure.NamespaceNode" id="9003726541839027023">
-        <property name="nameAsTyped" value="System." />
-        <property name="identifier" value="System" />
+      <node role="namespace" type="CSharp3.structure.NamespaceNode" id="9003726541839275657">
+        <property name="identifier" value="Bar" />
       </node>
     </node>
     <node role="usingDirectives" type="CSharp3.structure.UsingDirective" id="9003726541838479430">
-      <link role="namespace" targetNodeId="9003726541839027023" resolveInfo="System" />
+      <link role="namespace" targetNodeId="9003726541839275657" resolveInfo="Bar" />
     </node>
   </node>
 </model>

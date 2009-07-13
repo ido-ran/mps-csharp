@@ -24,7 +24,11 @@ public class QueriesGenerated {
   }
 
   public static Object propertyMacro_GetPropertyValue_9003726541838302690(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "namespace", false), "nameAsTyped");
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "namespace", false), "name");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_9003726541839175660(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "namespace", true), "name");
   }
 
   public static boolean ifMacro_Condition_9003726541838302645(final IOperationContext operationContext, final IfMacroContext _context) {
@@ -44,6 +48,22 @@ public class QueriesGenerated {
   }
 
   public static Iterable sourceNodesQuery_7308666934815672309(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "typeDeclarations", true);
+  }
+
+  public static Iterable sourceNodesQuery_9003726541839175767(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "externAliasDirectives", true);
+  }
+
+  public static Iterable sourceNodesQuery_9003726541839175775(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "usingDirectives", true);
+  }
+
+  public static Iterable sourceNodesQuery_9003726541839175783(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "namespaceDeclarations", true);
+  }
+
+  public static Iterable sourceNodesQuery_9003726541839175791(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "typeDeclarations", true);
   }
 
