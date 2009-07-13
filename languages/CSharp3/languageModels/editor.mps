@@ -327,10 +327,6 @@
       </node>
     </node>
   </node>
-  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="6532057541541128196">
-    <link role="conceptDeclaration" targetNodeId="1.847558595368972952" resolveInfo="CompilationUnit" />
-    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.EditorCellModel" id="6532057541541128197" />
-  </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="6532057541541638685">
     <link role="conceptDeclaration" targetNodeId="1.6532057541541638682" resolveInfo="EnumDeclaration" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6532057541541638687">
