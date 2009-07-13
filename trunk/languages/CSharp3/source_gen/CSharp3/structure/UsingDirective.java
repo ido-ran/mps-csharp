@@ -11,7 +11,7 @@ import jetbrains.mps.project.GlobalScope;
 public class UsingDirective extends BaseConcept {
   public static final String concept = "CSharp3.structure.UsingDirective";
   public static final String NAMESPACE_ALIAS = "namespaceAlias";
-  public static final String NAMESPACE_NODE = "namespaceNode";
+  public static final String NAMESPACE = "namespace";
 
   public UsingDirective(SNode node) {
     super(node);
@@ -25,12 +25,12 @@ public class UsingDirective extends BaseConcept {
     this.setProperty(UsingDirective.NAMESPACE_ALIAS, value);
   }
 
-  public NamespaceNode getNamespaceNode() {
-    return (NamespaceNode)this.getChild(NamespaceNode.class, UsingDirective.NAMESPACE_NODE);
+  public NamespaceNode getNamespace() {
+    return (NamespaceNode)this.getReferent(NamespaceNode.class, UsingDirective.NAMESPACE);
   }
 
-  public void setNamespaceNode(NamespaceNode node) {
-    super.setChild(UsingDirective.NAMESPACE_NODE, node);
+  public void setNamespace(NamespaceNode node) {
+    super.setReferent(UsingDirective.NAMESPACE, node);
   }
 
 

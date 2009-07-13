@@ -13,11 +13,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Label;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.nodeEditor.AbstractCellProvider;
 
 public class UsingDirective_Editor extends DefaultNodeEditor {
 
@@ -35,7 +36,7 @@ public class UsingDirective_Editor extends DefaultNodeEditor {
     if (renderingCondition3297_0(node, context, context.getOperationContext().getScope())) {
       editorCell.addEditorCell(this.createCollection_3297_1(context, node));
     }
-    editorCell.addEditorCell(this.createRefNode_3297_1(context, node));
+    editorCell.addEditorCell(this.createRefCell_3297_1(context, node));
     editorCell.addEditorCell(this.createConstant_3297_2(context, node, ";"));
     return editorCell;
   }
@@ -104,25 +105,25 @@ public class UsingDirective_Editor extends DefaultNodeEditor {
     return cellWithRole;
   }
 
-  public EditorCell createRefNode_3297_0_internal(EditorContext context, SNode node, CellProviderWithRole aProvider) {
+  public EditorCell createRefCell_3297_0_internal(EditorContext context, SNode node, CellProviderWithRole aProvider) {
     CellProviderWithRole provider = aProvider;
-    provider.setAuxiliaryCellProvider(null);
+    provider.setAuxiliaryCellProvider(new UsingDirective_Editor._Inline3297_0());
     EditorCell editorCell = provider.createEditorCell(context);
-    setupBasic_RefNode_3297_0(editorCell, node, context);
+    setupBasic_RefCell_3297_0(editorCell, node, context);
     if (editorCell instanceof EditorCell_Label) {
-      setupLabel_RefNode_3297_0((EditorCell_Label)editorCell, node, context);
+      setupLabel_RefCell_3297_0((EditorCell_Label)editorCell, node, context);
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     return editorCell;
   }
 
-  public EditorCell createRefNode_3297_1(EditorContext context, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, context);
-    provider.setRole("namespaceNode");
-    provider.setNoTargetText("<no namespaceNode>");
+  public EditorCell createRefCell_3297_1(EditorContext context, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, context);
+    provider.setRole("namespace");
+    provider.setNoTargetText("<no namespace>");
     provider.setReadOnly(false);
     provider.setAllowsEmptyTarget(false);
-    EditorCell cellWithRole = this.createRefNode_3297_0_internal(context, node, provider);
+    EditorCell cellWithRole = this.createRefCell_3297_0_internal(context, node, provider);
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -172,7 +173,7 @@ public class UsingDirective_Editor extends DefaultNodeEditor {
     CSharp3_StyleSheet.getOperator(editorCell).apply(editorCell);
   }
 
-  private static void setupBasic_RefNode_3297_0(EditorCell editorCell, SNode node, EditorContext context) {
+  private static void setupBasic_RefCell_3297_0(EditorCell editorCell, SNode node, EditorContext context) {
   }
 
   private static void setupBasic_Constant_3297_2(EditorCell editorCell, SNode node, EditorContext context) {
@@ -189,7 +190,7 @@ public class UsingDirective_Editor extends DefaultNodeEditor {
   private static void setupLabel_Constant_3297_1(EditorCell_Label editorCell, SNode node, EditorContext context) {
   }
 
-  private static void setupLabel_RefNode_3297_0(EditorCell_Label editorCell, SNode node, EditorContext context) {
+  private static void setupLabel_RefCell_3297_0(EditorCell_Label editorCell, SNode node, EditorContext context) {
   }
 
   private static void setupLabel_Constant_3297_2(EditorCell_Label editorCell, SNode node, EditorContext context) {
@@ -198,5 +199,58 @@ public class UsingDirective_Editor extends DefaultNodeEditor {
   public static boolean renderingCondition3297_0(SNode node, EditorContext editorContext, IScope scope) {
     return SPropertyOperations.getString(node, "namespaceAlias") != null;
   }
+
+  public static class _Inline3297_0 extends AbstractCellProvider {
+
+    public _Inline3297_0() {
+      super();
+    }
+
+    public EditorCell createEditorCell(EditorContext context) {
+      return this.createEditorCell(context, this.getSNode());
+    }
+
+    public EditorCell createEditorCell(EditorContext context, SNode node) {
+      return this.createProperty_3297_3(context, node);
+    }
+
+    public EditorCell createProperty_3297_2_internal(EditorContext context, SNode node, CellProviderWithRole aProvider) {
+      CellProviderWithRole provider = aProvider;
+      provider.setAuxiliaryCellProvider(null);
+      EditorCell editorCell = provider.createEditorCell(context);
+      setupBasic_Property_3297_1(editorCell, node, context);
+      if (editorCell instanceof EditorCell_Label) {
+        setupLabel_Property_3297_1((EditorCell_Label)editorCell, node, context);
+      }
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      return editorCell;
+    }
+
+    public EditorCell createProperty_3297_3(EditorContext context, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, context);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
+      provider.setAllowsEmptyTarget(false);
+      EditorCell cellWithRole = this.createProperty_3297_2_internal(context, node, provider);
+      SNode attributeConcept = provider.getRoleAttribute();
+      Class attributeKind = provider.getRoleAttributeClass();
+      if (attributeConcept != null) {
+        IOperationContext opContext = context.getOperationContext();
+        EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+        return manager.createRoleAttributeCell(context, attributeConcept, attributeKind, cellWithRole);
+      } else
+      return cellWithRole;
+    }
+
+
+    private static void setupBasic_Property_3297_1(EditorCell editorCell, SNode node, EditorContext context) {
+      editorCell.setCellId("property_name");
+    }
+
+    private static void setupLabel_Property_3297_1(EditorCell_Label editorCell, SNode node, EditorContext context) {
+    }
+
+}
 
 }

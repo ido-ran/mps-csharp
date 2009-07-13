@@ -14,6 +14,7 @@ public class ConstraintsDescriptor implements IModelConstraints {
 
   public ConstraintsDescriptor() {
     ListSequence.fromList(this.myConstraints).addElement(new ITypeDeclaration_identifier_PropertyConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new NamespaceNode_name_PropertyConstraint());
   }
 
   public void unRegisterSelf(ModelConstraintsManager p0) {

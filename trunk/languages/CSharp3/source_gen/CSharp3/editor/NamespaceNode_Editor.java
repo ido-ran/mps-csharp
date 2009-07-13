@@ -32,8 +32,8 @@ public class NamespaceNode_Editor extends DefaultNodeEditor {
 
   public EditorCell createProperty_2497_1(EditorContext context, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, context);
-    provider.setRole("name");
-    provider.setNoTargetText("<no name>");
+    provider.setRole("identifier");
+    provider.setNoTargetText("<no identifier>");
     provider.setReadOnly(false);
     provider.setAllowsEmptyTarget(false);
     EditorCell cellWithRole = this.createProperty_2497_0_internal(context, node, provider);
@@ -49,7 +49,7 @@ public class NamespaceNode_Editor extends DefaultNodeEditor {
 
 
   private static void setupBasic_Property_2497_0(EditorCell editorCell, SNode node, EditorContext context) {
-    editorCell.setCellId("property_name");
+    editorCell.setCellId("property_identifier");
   }
 
   private static void setupLabel_Property_2497_0(EditorCell_Label editorCell, SNode node, EditorContext context) {

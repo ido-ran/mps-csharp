@@ -21,7 +21,7 @@ public class QueriesGenerated {
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_NamespaceNode_4331618290746359771(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(_context.getSourceNode()), "CSharp3.structure.UsingDirective")) {
       SNode parent = SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "CSharp3.structure.UsingDirective");
-      return SLinkOperations.getTarget(parent, "namespaceNode", true) != null && SPropertyOperations.getString(parent, "namespaceAlias") == null;
+      return SLinkOperations.getTarget(parent, "namespace", false) != null && SPropertyOperations.getString(parent, "namespaceAlias") == null;
     }
     return false;
   }
@@ -42,8 +42,8 @@ public class QueriesGenerated {
 
         public SNode doSubstitute(String pattern) {
           SNode parent = SNodeOperations.cast(SNodeOperations.getParent(_context.getSourceNode()), "CSharp3.structure.UsingDirective");
-          SPropertyOperations.set(parent, "namespaceAlias", SPropertyOperations.getString(SLinkOperations.getTarget(parent, "namespaceNode", true), "name"));
-          SPropertyOperations.set(SLinkOperations.getTarget(parent, "namespaceNode", true), "name", null);
+          SPropertyOperations.set(parent, "namespaceAlias", SPropertyOperations.getString(SLinkOperations.getTarget(parent, "namespace", false), "name"));
+          SPropertyOperations.set(SLinkOperations.getTarget(parent, "namespace", false), "name", null);
           return parent;
         }
 
