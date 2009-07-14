@@ -37,13 +37,12 @@
   <maxImportIndex value="4" />
   <import index="1" modelUID="r:bbd9d46d-5f56-4aff-95b3-b72fe0b49291(CSharp3.structure)" version="-1" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
-  <visible index="2" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="1719913943655057824">
     <property name="name" value="main" />
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="9003726541839492015">
-      <link role="applicableConcept" targetNodeId="2v.1083245299891" resolveInfo="EnumConstantDeclaration" />
-      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="9003726541839494116">
-        <link role="template" targetNodeId="9003726541839494114" resolveInfo="reduce_EnumConstantDeclaration" />
+      <link role="applicableConcept" targetNodeId="1.5734555027416391838" resolveInfo="EnumMemberDeclaration" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="9003726541839596852">
+        <link role="template" targetNodeId="9003726541839494114" resolveInfo="reduce_EnumMemberDeclaration" />
       </node>
     </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="9003726541839275790">
@@ -75,7 +74,7 @@
       <link role="template" targetNodeId="1711965147585967132" />
     </node>
   </node>
-  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+  <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.gtext.structure.GDocument" id="1711965147585967132">
     <property name="documentName" value="compilationUnit" />
     <property name="extension" value="cs" />
@@ -166,7 +165,7 @@
           <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1711965147586217859">
             <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1711965147586217860">
               <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1711965147586217861">
-                <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
               </node>
               <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="1711965147586217862" />
             </node>
@@ -267,7 +266,7 @@
                     </node>
                   </node>
                   <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="9003726541839176624">
-                    <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                    <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
                   </node>
                 </node>
               </node>
@@ -304,7 +303,7 @@
                       </node>
                     </node>
                     <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="9003726541839175673">
-                      <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                      <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
                     </node>
                   </node>
                 </node>

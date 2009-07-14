@@ -42,6 +42,20 @@
         </node>
         <node role="storageType" type="CSharp3.structure.Int64Type" id="9003726541839173408" />
       </node>
+      <node role="typeDeclarations" type="CSharp3.structure.EnumDeclaration" id="9003726541839594654">
+        <property name="name" value="def" />
+        <node role="visibility" type="CSharp3.structure.InternalTypeVisibility" id="9003726541839594655" />
+        <node role="storageType" type="CSharp3.structure.Int32Type" id="9003726541839594656" />
+        <node role="members" type="CSharp3.structure.EnumMemberDeclaration" id="9003726541839594657">
+          <property name="identifier" value="h" />
+        </node>
+        <node role="members" type="CSharp3.structure.EnumMemberDeclaration" id="9003726541839594658">
+          <property name="identifier" value="i" />
+        </node>
+        <node role="members" type="CSharp3.structure.EnumMemberDeclaration" id="9003726541839594659">
+          <property name="identifier" value="j" />
+        </node>
+      </node>
       <node role="externAliasDirectives" type="CSharp3.structure.ExternAliasDirective" id="9003726541839004025">
         <property name="identifier" value="foo" />
       </node>
