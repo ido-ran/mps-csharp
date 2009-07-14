@@ -13,4 +13,16 @@ namespace Bar
       extern alias abc;
     }
   }
+    enum abc : 
+  {
+     A
+,     B
+,     C
+  }
+    enum def : 
+  {
+     h
+,     i
+,     j
+  }
 }

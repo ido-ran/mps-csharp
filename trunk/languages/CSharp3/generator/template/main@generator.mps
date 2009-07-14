@@ -63,6 +63,20 @@
         <link role="template" targetNodeId="9003726541839175525" resolveInfo="reduce_NamespaceDeclaration" />
       </node>
     </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="9003726541839799125">
+      <property name="applyToConceptInheritors" value="true" />
+      <link role="applicableConcept" targetNodeId="1.7179223641486548897" resolveInfo="SimpleType" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="9003726541839799129">
+        <link role="template" targetNodeId="9003726541839799127" resolveInfo="reduce_SimpleType" />
+      </node>
+    </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="9003726541840024855">
+      <property name="applyToConceptInheritors" value="true" />
+      <link role="applicableConcept" targetNodeId="1.5734555027415027766" resolveInfo="TypeVisibility" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="9003726541840026956">
+        <link role="template" targetNodeId="9003726541840026954" resolveInfo="reduce_TypeVisibility" />
+      </node>
+    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="9003726541839173418">
       <link role="applicableConcept" targetNodeId="1.847558595368972963" resolveInfo="UsingDirective" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="9003726541839173419">
@@ -630,10 +644,61 @@
           </node>
         </node>
       </node>
-      <node role="item" type="jetbrains.mps.gtext.structure.GText" id="9003726541839494163">
-        <property name="text" value="," />
-      </node>
       <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="9003726541839494165" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="9003726541839799116">
+    <property name="name" value="reduce_ByteType" />
+    <link role="applicableConcept" targetNodeId="1.7179223641486550294" resolveInfo="ByteType" />
+    <node role="contentNode" type="jetbrains.mps.gtext.structure.GText" id="9003726541839799119">
+      <property name="text" value="byte" />
+      <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="9003726541839799120" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="9003726541839799127">
+    <property name="name" value="reduce_SimpleType" />
+    <link role="applicableConcept" targetNodeId="1.7179223641486548897" resolveInfo="SimpleType" />
+    <node role="contentNode" type="jetbrains.mps.gtext.structure.GText" id="9003726541839799130">
+      <property name="text" value="?" />
+      <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="9003726541839799131" />
+      <node role="propertyMacro$property_attribute$text" type="jetbrains.mps.lang.generator.structure.PropertyMacro" id="9003726541839799132">
+        <property name="comment" value="alias" />
+        <node role="propertyValueFunction" type="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" id="9003726541839799133">
+          <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="9003726541839799134">
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="9003726541839799135">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9003726541839799137">
+                <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="9003726541839799136" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SConceptPropertyAccess" id="9003726541839924083">
+                  <link role="conceptProperty" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="9003726541840026954">
+    <property name="name" value="reduce_TypeVisibility" />
+    <link role="applicableConcept" targetNodeId="1.5734555027415027766" resolveInfo="TypeVisibility" />
+    <node role="contentNode" type="jetbrains.mps.gtext.structure.GText" id="9003726541840026958">
+      <property name="text" value="?" />
+      <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="9003726541840026959" />
+      <node role="propertyMacro$property_attribute$text" type="jetbrains.mps.lang.generator.structure.PropertyMacro" id="9003726541840026960">
+        <property name="comment" value="alias" />
+        <node role="propertyValueFunction" type="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" id="9003726541840026961">
+          <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="9003726541840026962">
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="9003726541840026963">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9003726541840026965">
+                <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="9003726541840026964" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SConceptPropertyAccess" id="9003726541840026969">
+                  <link role="conceptProperty" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
