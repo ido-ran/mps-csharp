@@ -37,6 +37,10 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(_context.getNode(), "identifier");
   }
 
+  public static Object propertyMacro_GetPropertyValue_9003726541839495305(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "identifier");
+  }
+
   public static boolean ifMacro_Condition_9003726541838302645(final IOperationContext operationContext, final IfMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), "namespaceAlias") != null;
   }
@@ -45,12 +49,20 @@ public class QueriesGenerated {
     return SPropertyOperations.getBoolean(_context.getNode(), "hidesInheritedMember");
   }
 
+  public static boolean ifMacro_Condition_9003726541839495316(final IOperationContext operationContext, final IfMacroContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "value", true) != null;
+  }
+
   public static SNode sourceNodeQuery_9003726541839277966(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "visibility", true);
   }
 
   public static SNode sourceNodeQuery_9003726541839278006(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "storageType", true);
+  }
+
+  public static SNode sourceNodeQuery_9003726541839495331(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "value", true);
   }
 
   public static Iterable sourceNodesQuery_2051641451133493531(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
@@ -91,6 +103,10 @@ public class QueriesGenerated {
 
   public static Iterable sourceNodesQuery_9003726541839278070(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "members", true);
+  }
+
+  public static Iterable sourceNodesQuery_9003726541839494171(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "attributes", true);
   }
 
 }
