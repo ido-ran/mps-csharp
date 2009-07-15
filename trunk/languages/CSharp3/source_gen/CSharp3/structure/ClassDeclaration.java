@@ -20,6 +20,7 @@ public class ClassDeclaration extends BaseConcept implements ITypeDeclaration, I
   public static final String IS_NESTED_TYPE = "isNestedType";
   public static final String HIDES_INHERITED_MEMBER = "hidesInheritedMember";
   public static final String VISIBILITY = "visibility";
+  public static final String MEMBERS = "members";
   public static final String ATTRIBUTES = "attributes";
   public static final String INTERFACE_BASES = "interfaceBases";
 
@@ -89,6 +90,26 @@ public class ClassDeclaration extends BaseConcept implements ITypeDeclaration, I
 
   public void setVisibility(TypeVisibility node) {
     super.setChild(ClassDeclaration.VISIBILITY, node);
+  }
+
+  public int getMembersesCount() {
+    return this.getChildCount(ClassDeclaration.MEMBERS);
+  }
+
+  public Iterator<IClassMember> memberses() {
+    return this.children(IClassMember.class, ClassDeclaration.MEMBERS);
+  }
+
+  public List<IClassMember> getMemberses() {
+    return this.getChildren(IClassMember.class, ClassDeclaration.MEMBERS);
+  }
+
+  public void addMembers(IClassMember node) {
+    this.addChild(ClassDeclaration.MEMBERS, node);
+  }
+
+  public void insertMembers(IClassMember prev, IClassMember node) {
+    this.insertChild(prev, ClassDeclaration.MEMBERS, node);
   }
 
   public int getAttributesesCount() {

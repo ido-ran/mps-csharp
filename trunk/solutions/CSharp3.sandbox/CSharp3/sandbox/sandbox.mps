@@ -26,6 +26,20 @@
           <node role="externAliasDirectives" type="CSharp3.structure.ExternAliasDirective" id="9003726541839275660">
             <property name="identifier" value="abc" />
           </node>
+          <node role="typeDeclarations" type="CSharp3.structure.EnumDeclaration" id="2555972171955818421">
+            <property name="name" value="abc" />
+            <node role="visibility" type="CSharp3.structure.InternalTypeVisibility" id="2555972171955818422" />
+            <node role="storageType" type="CSharp3.structure.Int32Type" id="2555972171955818423" />
+            <node role="members" type="CSharp3.structure.EnumMemberDeclaration" id="2555972171956044548">
+              <property name="identifier" value="def" />
+            </node>
+            <node role="members" type="CSharp3.structure.EnumMemberDeclaration" id="2555972171956044552">
+              <property name="identifier" value="ghi" />
+            </node>
+            <node role="members" type="CSharp3.structure.EnumMemberDeclaration" id="2555972171956044555">
+              <property name="identifier" value="jkl" />
+            </node>
+          </node>
         </node>
       </node>
       <node role="typeDeclarations" type="CSharp3.structure.EnumDeclaration" id="9003726541839173403">

@@ -94,8 +94,8 @@
               <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5734555027415111474">
                 <link role="applicableNode" targetNodeId="5734555027415111402" resolveInfo="declaration" />
               </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5734555027415249007">
-                <link role="property" targetNodeId="1.5734555027415249006" resolveInfo="hidesInheritedMember" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="2555972171955817858">
+                <link role="property" targetNodeId="1.2555972171955759192" resolveInfo="hidesInheritedMember" />
               </node>
             </node>
           </node>

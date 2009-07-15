@@ -4,11 +4,10 @@ package CSharp3.structure;
 
 import jetbrains.mps.lang.core.structure.INamedConcept;
 
-public interface ITypeDeclaration extends IAttributed, INamedConcept {
+public interface ITypeDeclaration extends IAttributed, INamedConcept, ITypeMember {
   public static final String concept = "CSharp3.structure.ITypeDeclaration";
   public static final String IDENTIFIER = "identifier";
   public static final String IS_NESTED_TYPE = "isNestedType";
-  public static final String HIDES_INHERITED_MEMBER = "hidesInheritedMember";
   public static final String VISIBILITY = "visibility";
 
   public String getIdentifier();
@@ -18,10 +17,6 @@ public interface ITypeDeclaration extends IAttributed, INamedConcept {
   public boolean getIsNestedType();
 
   public void setIsNestedType(boolean value);
-
-  public boolean getHidesInheritedMember();
-
-  public void setHidesInheritedMember(boolean value);
 
   public TypeVisibility getVisibility();
 
