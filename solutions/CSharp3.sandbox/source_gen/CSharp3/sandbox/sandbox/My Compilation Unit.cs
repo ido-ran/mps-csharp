@@ -13,13 +13,13 @@ namespace Bar
       extern alias abc;
     }
   }
-    enum abc : 
+   public enum abc : long
   {
      A
 ,     B
 ,     C
   }
-    enum def : 
+   internal enum def : int
   {
      h
 ,     i

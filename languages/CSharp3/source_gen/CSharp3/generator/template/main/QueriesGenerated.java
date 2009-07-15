@@ -46,6 +46,10 @@ public class QueriesGenerated {
     return SConceptPropertyOperations.getString(_context.getNode(), "alias");
   }
 
+  public static Object propertyMacro_GetPropertyValue_9003726541840026961(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SConceptPropertyOperations.getString(_context.getNode(), "alias");
+  }
+
   public static boolean ifMacro_Condition_9003726541838302645(final IOperationContext operationContext, final IfMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), "namespaceAlias") != null;
   }
