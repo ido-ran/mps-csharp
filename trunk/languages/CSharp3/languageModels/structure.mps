@@ -225,7 +225,7 @@
       <property name="metaClass" value="aggregation" />
       <property name="role" value="members" />
       <property name="sourceCardinality" value="1..n" />
-      <link role="target" targetNodeId="5734555027416391838" resolveInfo="EnumMemberDeclaration" />
+      <link role="target" targetNodeId="2555972171955672958" resolveInfo="IEnumMember" />
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6532057541541638683">
       <link role="intfc" targetNodeId="6532057541540352221" resolveInfo="ITypeDeclaration" />
@@ -382,6 +382,9 @@
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5734555027416391840">
       <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955672960">
+      <link role="intfc" targetNodeId="2555972171955672958" resolveInfo="IEnumMember" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7179223641486548891">
@@ -576,6 +579,9 @@
       <property name="role" value="interfaceBases" />
       <link role="target" targetNodeId="5825802137697715459" resolveInfo="InterfaceReference" />
     </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955672958">
+    <property name="name" value="IEnumMember" />
   </node>
 </model>
 
