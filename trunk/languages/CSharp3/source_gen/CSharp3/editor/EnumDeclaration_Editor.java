@@ -346,7 +346,7 @@ public class EnumDeclaration_Editor extends DefaultNodeEditor {
   }
 
   public static boolean renderingCondition0701_0(SNode node, EditorContext editorContext, IScope scope) {
-    return SPropertyOperations.getBoolean(node, "hidesInheritedMember");
+    return SPropertyOperations.getString(node, "");
   }
 
   public static boolean renderingCondition0701_1(SNode node, EditorContext editorContext, IScope scope) {
