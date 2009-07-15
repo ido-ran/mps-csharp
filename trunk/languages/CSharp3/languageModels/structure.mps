@@ -154,8 +154,8 @@
       <property name="sourceCardinality" value="0..n" />
       <link role="target" targetNodeId="2555972171955759164" resolveInfo="IClassMember" />
     </node>
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6532057541540521870">
-      <link role="intfc" targetNodeId="6532057541540352221" resolveInfo="IMemberDeclaration" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171956044569">
+      <link role="intfc" targetNodeId="2555972171956044566" resolveInfo="IPartialTypeDeclaration" />
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="664760238039138294">
       <link role="intfc" targetNodeId="664760238039138288" resolveInfo="IInterfaceImplementor" />
@@ -211,8 +211,8 @@
       <property name="sourceCardinality" value="0..n" />
       <link role="target" targetNodeId="2555972171955759165" resolveInfo="IStructMember" />
     </node>
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6532057541541638681">
-      <link role="intfc" targetNodeId="6532057541540352221" resolveInfo="ITypeDeclaration" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171956044570">
+      <link role="intfc" targetNodeId="2555972171956044566" resolveInfo="IPartialTypeDeclaration" />
     </node>
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6532057541541639706">
       <property name="value" value="struct" />
@@ -625,6 +625,10 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759173">
       <link role="intfc" targetNodeId="2555972171955759162" resolveInfo="IInterfaceMember" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="2555972171956044561">
+      <property name="value" value="method" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2555972171955759174">
     <property name="name" value="InterfacePropertyDeclaration" />
@@ -682,6 +686,26 @@
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="2555972171955759192">
       <property name="name" value="hidesInheritedMember" />
       <link role="dataType" targetNodeId="2v.1082983657063" resolveInfo="boolean" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2555972171956044562">
+    <property name="name" value="InterfaceEventDeclaration" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171956044563">
+      <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171956044565">
+      <link role="intfc" targetNodeId="2555972171955759162" resolveInfo="IInterfaceMember" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171956044566">
+    <property name="name" value="IPartialTypeDeclaration" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="2555972171956044568">
+      <property name="name" value="isPartialType" />
+      <link role="dataType" targetNodeId="2v.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171956044567">
+      <link role="intfc" targetNodeId="6532057541540352221" resolveInfo="ITypeDeclaration" />
     </node>
   </node>
 </model>
