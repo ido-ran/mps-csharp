@@ -10,13 +10,14 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class ClassDeclaration extends BaseConcept implements ITypeDeclaration, IInterfaceImplementor {
+public class ClassDeclaration extends BaseConcept implements IPartialTypeDeclaration, IInterfaceImplementor {
   public static final String concept = "CSharp3.structure.ClassDeclaration";
   public static final String IDENTIFIER = "identifier";
   public static final String NAME = "name";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String IS_PARTIAL_TYPE = "isPartialType";
   public static final String IS_NESTED_TYPE = "isNestedType";
   public static final String HIDES_INHERITED_MEMBER = "hidesInheritedMember";
   public static final String VISIBILITY = "visibility";
@@ -66,6 +67,14 @@ public class ClassDeclaration extends BaseConcept implements ITypeDeclaration, I
 
   public void setVirtualPackage(String value) {
     this.setProperty(ClassDeclaration.VIRTUAL_PACKAGE, value);
+  }
+
+  public boolean getIsPartialType() {
+    return this.getBooleanProperty(ClassDeclaration.IS_PARTIAL_TYPE);
+  }
+
+  public void setIsPartialType(boolean value) {
+    this.setBooleanProperty(ClassDeclaration.IS_PARTIAL_TYPE, value);
   }
 
   public boolean getIsNestedType() {
