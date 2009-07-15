@@ -40,6 +40,10 @@
               <property name="identifier" value="jkl" />
             </node>
           </node>
+          <node role="typeDeclarations" type="CSharp3.structure.InterfaceDeclaration" id="2555972171956044558">
+            <property name="name" value="joe" />
+            <node role="visibility" type="CSharp3.structure.InternalTypeVisibility" id="2555972171956044559" />
+          </node>
         </node>
       </node>
       <node role="typeDeclarations" type="CSharp3.structure.EnumDeclaration" id="9003726541839173403">
