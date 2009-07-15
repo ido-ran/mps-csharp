@@ -634,5 +634,47 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="2555972171956044575">
+    <link role="conceptDeclaration" targetNodeId="1.2555972171955759180" resolveInfo="InterfacePropertyGetter" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="2555972171956044577">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="2555972171956044582">
+        <link role="relationDeclaration" targetNodeId="1.6532057541541638704" />
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="2555972171956044583" />
+        <node role="emptyCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2555972171956044584">
+          <property name="nullText" value="&lt;&lt;getter attributes&gt;&gt;" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2555972171956044587">
+        <property name="text" value="get" />
+        <link role="styleClass" targetNodeId="847558595369667602" resolveInfo="KeyWord" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2555972171956044589">
+        <property name="text" value=";" />
+        <link role="styleClass" targetNodeId="847558595369667598" resolveInfo="Semicolon" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="2555972171956044579" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="2555972171956044590">
+    <link role="conceptDeclaration" targetNodeId="1.2555972171955759182" resolveInfo="InterfacePropertySetter" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="2555972171956044592">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="2555972171956044593">
+        <link role="relationDeclaration" targetNodeId="1.6532057541541638704" />
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="2555972171956044594" />
+        <node role="emptyCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2555972171956044595">
+          <property name="nullText" value="&lt;&lt;setter attributes&gt;&gt;" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2555972171956044596">
+        <property name="text" value="set" />
+        <link role="styleClass" targetNodeId="847558595369667602" resolveInfo="KeyWord" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2555972171956044597">
+        <property name="text" value=";" />
+        <link role="styleClass" targetNodeId="847558595369667598" resolveInfo="Semicolon" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="2555972171956044598" />
+    </node>
+  </node>
 </model>
 

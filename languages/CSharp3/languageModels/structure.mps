@@ -708,5 +708,15 @@
       <link role="intfc" targetNodeId="6532057541540352221" resolveInfo="ITypeDeclaration" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2555972171956044571">
+    <property name="name" value="InterfaceIndexerDeclaration" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171956044574">
+      <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171956044572">
+      <link role="intfc" targetNodeId="2555972171955759162" resolveInfo="IInterfaceMember" />
+    </node>
+  </node>
 </model>
 
