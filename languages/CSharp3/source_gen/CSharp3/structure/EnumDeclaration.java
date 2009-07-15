@@ -104,19 +104,19 @@ public class EnumDeclaration extends BaseConcept implements ITypeDeclaration, IA
     return this.getChildCount(EnumDeclaration.MEMBERS);
   }
 
-  public Iterator<EnumMemberDeclaration> memberses() {
-    return this.children(EnumMemberDeclaration.class, EnumDeclaration.MEMBERS);
+  public Iterator<IEnumMember> memberses() {
+    return this.children(IEnumMember.class, EnumDeclaration.MEMBERS);
   }
 
-  public List<EnumMemberDeclaration> getMemberses() {
-    return this.getChildren(EnumMemberDeclaration.class, EnumDeclaration.MEMBERS);
+  public List<IEnumMember> getMemberses() {
+    return this.getChildren(IEnumMember.class, EnumDeclaration.MEMBERS);
   }
 
-  public void addMembers(EnumMemberDeclaration node) {
+  public void addMembers(IEnumMember node) {
     this.addChild(EnumDeclaration.MEMBERS, node);
   }
 
-  public void insertMembers(EnumMemberDeclaration prev, EnumMemberDeclaration node) {
+  public void insertMembers(IEnumMember prev, IEnumMember node) {
     this.insertChild(prev, EnumDeclaration.MEMBERS, node);
   }
 

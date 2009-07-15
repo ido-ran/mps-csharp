@@ -20,6 +20,7 @@ public class StructDeclaration extends BaseConcept implements ITypeDeclaration {
   public static final String IS_NESTED_TYPE = "isNestedType";
   public static final String HIDES_INHERITED_MEMBER = "hidesInheritedMember";
   public static final String VISIBILITY = "visibility";
+  public static final String MEMBERS = "members";
   public static final String ATTRIBUTES = "attributes";
 
   public StructDeclaration(SNode node) {
@@ -88,6 +89,26 @@ public class StructDeclaration extends BaseConcept implements ITypeDeclaration {
 
   public void setVisibility(TypeVisibility node) {
     super.setChild(StructDeclaration.VISIBILITY, node);
+  }
+
+  public int getMembersesCount() {
+    return this.getChildCount(StructDeclaration.MEMBERS);
+  }
+
+  public Iterator<IStructMember> memberses() {
+    return this.children(IStructMember.class, StructDeclaration.MEMBERS);
+  }
+
+  public List<IStructMember> getMemberses() {
+    return this.getChildren(IStructMember.class, StructDeclaration.MEMBERS);
+  }
+
+  public void addMembers(IStructMember node) {
+    this.addChild(StructDeclaration.MEMBERS, node);
+  }
+
+  public void insertMembers(IStructMember prev, IStructMember node) {
+    this.insertChild(prev, StructDeclaration.MEMBERS, node);
   }
 
   public int getAttributesesCount() {

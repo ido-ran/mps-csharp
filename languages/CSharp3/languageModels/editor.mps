@@ -347,8 +347,8 @@
               <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5734555027416261341">
                 <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5734555027416261343">
                   <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="5734555027416261342" />
-                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5734555027416261347">
-                    <link role="property" targetNodeId="1.5734555027415249006" resolveInfo="hidesInheritedMember" />
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="2555972171955916863">
+                    <link role="property" targetNodeId="1.2555972171955759192" resolveInfo="hidesInheritedMember" />
                   </node>
                 </node>
               </node>
@@ -541,8 +541,8 @@
               <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5825802137697694206">
                 <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5825802137697694207">
                   <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="5825802137697694208" />
-                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5825802137697694209">
-                    <link role="property" targetNodeId="1.5734555027415249006" resolveInfo="hidesInheritedMember" />
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="2555972171955933196">
+                    <link role="property" targetNodeId="1.2555972171955759192" resolveInfo="hidesInheritedMember" />
                   </node>
                 </node>
               </node>

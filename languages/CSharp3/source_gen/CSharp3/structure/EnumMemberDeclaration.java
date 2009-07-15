@@ -10,12 +10,13 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class EnumMemberDeclaration extends BaseConcept implements IAttributed {
+public class EnumMemberDeclaration extends BaseConcept implements IAttributed, IEnumMember {
   public static final String concept = "CSharp3.structure.EnumMemberDeclaration";
   public static final String IDENTIFIER = "identifier";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String HIDES_INHERITED_MEMBER = "hidesInheritedMember";
   public static final String VALUE = "value";
   public static final String ATTRIBUTES = "attributes";
 
@@ -53,6 +54,14 @@ public class EnumMemberDeclaration extends BaseConcept implements IAttributed {
 
   public void setVirtualPackage(String value) {
     this.setProperty(EnumMemberDeclaration.VIRTUAL_PACKAGE, value);
+  }
+
+  public boolean getHidesInheritedMember() {
+    return this.getBooleanProperty(EnumMemberDeclaration.HIDES_INHERITED_MEMBER);
+  }
+
+  public void setHidesInheritedMember(boolean value) {
+    this.setBooleanProperty(EnumMemberDeclaration.HIDES_INHERITED_MEMBER, value);
   }
 
   public ConstantExpression getValue() {

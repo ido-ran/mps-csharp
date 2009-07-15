@@ -117,19 +117,19 @@ public class InterfaceDeclaration extends BaseConcept implements ITypeDeclaratio
     return this.getChildCount(InterfaceDeclaration.MEMBERS);
   }
 
-  public Iterator<CharType> memberses() {
-    return this.children(CharType.class, InterfaceDeclaration.MEMBERS);
+  public Iterator<IInterfaceMember> memberses() {
+    return this.children(IInterfaceMember.class, InterfaceDeclaration.MEMBERS);
   }
 
-  public List<CharType> getMemberses() {
-    return this.getChildren(CharType.class, InterfaceDeclaration.MEMBERS);
+  public List<IInterfaceMember> getMemberses() {
+    return this.getChildren(IInterfaceMember.class, InterfaceDeclaration.MEMBERS);
   }
 
-  public void addMembers(CharType node) {
+  public void addMembers(IInterfaceMember node) {
     this.addChild(InterfaceDeclaration.MEMBERS, node);
   }
 
-  public void insertMembers(CharType prev, CharType node) {
+  public void insertMembers(IInterfaceMember prev, IInterfaceMember node) {
     this.insertChild(prev, InterfaceDeclaration.MEMBERS, node);
   }
 
