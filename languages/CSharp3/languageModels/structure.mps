@@ -133,16 +133,15 @@
     <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="664760238039008086">
       <link role="intfc" targetNodeId="2v.1169194658468" resolveInfo="INamedConcept" />
     </node>
+    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759191">
+      <link role="intfc" targetNodeId="2555972171955759189" resolveInfo="IHidesInheritedMember" />
+    </node>
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="6532057541541638684">
       <property name="name" value="identifier" />
       <link role="dataType" targetNodeId="847558595370832099" resolveInfo="Identifier" />
     </node>
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5734555027415027790">
       <property name="name" value="isNestedType" />
-      <link role="dataType" targetNodeId="2v.1082983657063" resolveInfo="boolean" />
-    </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5734555027415249006">
-      <property name="name" value="hidesInheritedMember" />
       <link role="dataType" targetNodeId="2v.1082983657063" resolveInfo="boolean" />
     </node>
   </node>
@@ -595,11 +594,16 @@
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955672958">
     <property name="name" value="IEnumMember" />
     <property name="package" value="membership" />
+    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955810292">
+      <link role="intfc" targetNodeId="2555972171955759189" resolveInfo="ITypeMember" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955759162">
     <property name="name" value="IInterfaceMember" />
     <property name="package" value="membership" />
-    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759163" />
+    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955810291">
+      <link role="intfc" targetNodeId="2555972171955759189" resolveInfo="ITypeMember" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955759164">
     <property name="package" value="membership" />
@@ -608,7 +612,77 @@
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955759165">
     <property name="package" value="membership" />
     <property name="name" value="IStructMember" />
-    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759166" />
+    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955810293">
+      <link role="intfc" targetNodeId="2555972171955759189" resolveInfo="ITypeMember" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2555972171955759170">
+    <property name="name" value="InterfaceMethodDeclaration" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759171">
+      <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759173">
+      <link role="intfc" targetNodeId="2555972171955759162" resolveInfo="IInterfaceMember" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2555972171955759174">
+    <property name="name" value="InterfacePropertyDeclaration" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2555972171955759178">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="getter" />
+      <link role="target" targetNodeId="2555972171955759180" resolveInfo="InterfacePropertyGetter" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2555972171955759179">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="setter" />
+      <link role="target" targetNodeId="2555972171955759182" resolveInfo="InterfacePropertySetter" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759175">
+      <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759177">
+      <link role="intfc" targetNodeId="2555972171955759162" resolveInfo="IInterfaceMember" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="2555972171955759184">
+      <property name="value" value="property" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="2555972171955759186">
+      <property name="value" value="property declaration" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473914776" resolveInfo="shortDescription" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2555972171955759180">
+    <property name="name" value="InterfacePropertyGetter" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759181">
+      <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="2555972171955759187">
+      <property name="value" value="get" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2555972171955759182">
+    <property name="name" value="InterfacePropertySetter" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759183">
+      <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="2555972171955759188">
+      <property name="value" value="set" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955759189">
+    <property name="name" value="ITypeMember" />
+    <property name="package" value="membership" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="2555972171955759192">
+      <property name="name" value="hidesInheritedMember" />
+      <link role="dataType" targetNodeId="2v.1082983657063" resolveInfo="boolean" />
+    </node>
   </node>
 </model>
 

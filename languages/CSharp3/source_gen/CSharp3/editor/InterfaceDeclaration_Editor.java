@@ -372,7 +372,7 @@ public class InterfaceDeclaration_Editor extends DefaultNodeEditor {
   }
 
   public static boolean renderingCondition1131_0(SNode node, EditorContext editorContext, IScope scope) {
-    return SPropertyOperations.getBoolean(node, "hidesInheritedMember");
+    return SPropertyOperations.getString(node, "");
   }
 
   public static boolean renderingCondition1131_1(SNode node, EditorContext editorContext, IScope scope) {
