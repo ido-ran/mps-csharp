@@ -149,6 +149,12 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6532057541540521869">
     <property name="name" value="ClassDeclaration" />
     <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2555972171955759167">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="members" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="2555972171955759164" resolveInfo="IClassMember" />
+    </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6532057541540521870">
       <link role="intfc" targetNodeId="6532057541540352221" resolveInfo="IMemberDeclaration" />
     </node>
@@ -200,6 +206,12 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6532057541541638680">
     <property name="name" value="StructDeclaration" />
     <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2555972171955759168">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="members" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="2555972171955759165" resolveInfo="IStructMember" />
+    </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6532057541541638681">
       <link role="intfc" targetNodeId="6532057541540352221" resolveInfo="ITypeDeclaration" />
     </node>
@@ -509,7 +521,7 @@
       <property name="metaClass" value="aggregation" />
       <property name="role" value="members" />
       <property name="sourceCardinality" value="0..n" />
-      <link role="target" targetNodeId="7179223641486550296" resolveInfo="CharType" />
+      <link role="target" targetNodeId="2555972171955759162" resolveInfo="IInterfaceMember" />
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5825802137697694189">
       <link role="intfc" targetNodeId="6532057541540352221" resolveInfo="ITypeDeclaration" />
@@ -582,6 +594,21 @@
   </node>
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955672958">
     <property name="name" value="IEnumMember" />
+    <property name="package" value="membership" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955759162">
+    <property name="name" value="IInterfaceMember" />
+    <property name="package" value="membership" />
+    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759163" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955759164">
+    <property name="package" value="membership" />
+    <property name="name" value="IClassMember" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2555972171955759165">
+    <property name="package" value="membership" />
+    <property name="name" value="IStructMember" />
+    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759166" />
   </node>
 </model>
 
