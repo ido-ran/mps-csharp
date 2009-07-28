@@ -83,5 +83,26 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="1556829168063572250">
+    <link role="concept" targetNodeId="1.5734555027416391838" resolveInfo="EnumMemberDeclaration" />
+    <node role="property" type="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" id="1556829168063572251">
+      <link role="applicableProperty" targetNodeId="1.2555972171955759192" resolveInfo="hidesInheritedMember" />
+      <node role="propertyValidator" type="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" id="1556829168063572252">
+        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1556829168063572253">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.RemarkStatement" id="1556829168063572262">
+            <property name="value" value=" enums never inherit members" />
+          </node>
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1556829168063572254">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.EqualsExpression" id="1556829168063572256">
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="1556829168063572259">
+                <property name="value" value="false" />
+              </node>
+              <node role="leftExpression" type="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" id="1556829168063572255" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -62,4 +62,15 @@ public class CSharp3_StyleSheet {
     };
   }
 
+  public static Style getProperty(final EditorCell cell) {
+    return new Style(cell) {
+      {
+        this.set(StyleAttributes.SELECTABLE, false);
+        this.set(StyleAttributes.DRAW_BORDER, true);
+        this.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
+        this.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_MAGENTA);
+      }
+    };
+  }
+
 }
