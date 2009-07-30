@@ -643,6 +643,11 @@
       <property name="role" value="setter" />
       <link role="target" targetNodeId="2555972171955759182" resolveInfo="InterfacePropertySetter" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1556829168063791949">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="type" />
+      <link role="target" targetNodeId="2539479292852141722" resolveInfo="ITypeReference" />
+    </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171955759175">
       <link role="intfc" targetNodeId="6532057541541638703" resolveInfo="IAttributed" />
     </node>
@@ -716,6 +721,24 @@
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2555972171956044572">
       <link role="intfc" targetNodeId="2555972171955759162" resolveInfo="IInterfaceMember" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2539479292852141722">
+    <property name="name" value="ITypeReference" />
+    <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2539479292852149769">
+      <link role="intfc" targetNodeId="2v.1234971358450" resolveInfo="IType" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2539479292852148888">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="genericParameters" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="2539479292852141722" resolveInfo="ITypeReference" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2539479292852141724">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="type" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6532057541540352221" resolveInfo="ITypeDeclaration" />
     </node>
   </node>
 </model>
